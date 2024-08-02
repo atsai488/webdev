@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Austin's club information and things that he has done for them. These are what he occupy his time with for the majority.">
+    <title>Austin's Clubs and Extracurriculars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <style>
+        h1{
+            text-align: center;
+            background-color: darkred;
+            height: fit-content;
+            padding: 0;
+            top: 100px;
+            margin-bottom: 0px;
+            font-size: 6em;
+            color: white;
+        }
+        .half-container{
+            display: flex;
+            width: 100%;
+            background-color: white;
+        }
+        #top-half-container{
+            padding-top: 0;
+            padding-bottom: 50px;
+        }
+        #bottom-half-container{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .text-container{
+            width: 35%;
+            margin-left: 15%;
+            line-height: 2em;
+            font-size: 1.2em;
+            text-align: justify;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 5% 5%;
+        }
+        .image-container{
+            padding-top: 50px;
+            width: 50%;
+        }
+        .half-img{
+            height: 650px;
+            margin-right: 35%;
+        }
+        #bottom-half-img{
+            margin-right: 20%;
+        }
+        #full-image-container{
+            margin: 50px auto;
+        }
+        #full-img{
+            width: 800px;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Clubs and Extracurriculars</h1>
+    <div class="nav-bar">
+        <div class="section" id="first"><a href="homepage.html">Home</a></div>
+        <div class="section" id="second"><a href="friends.html">Friends</a></div>
+        <div class="section" id="third"><a href="first-memories.html">Memories</a></div>
+        <div class="section" id="fourth"><a href="clubs.html">Clubs</a></div>
+        <div class="section" id="fifth"><a href="volleyball.html">Volleyball</a></div>
+        <div class="section" id="sixth"><a href="future.html">Future</a></div>
+        <div class="section" id="seventh"><a href="blurb.html">Extra</a></div>
+    </div>
+
+    <div class="half-container" id="top-half-container">
+        <div class="text-container">
+            Clubs were always going to be a main focus. Because my sister went to USC before I did, she gave me all the information about different clubs to look out for and apply to. I applied to multiple clubs during my first semester, but unfortunately, I did not make the cutoff for any of them. I was heartbroken, but things happen for a reason. I joined a club called FSAE Electric which designs and builds an electric racecar. This club had no application process and accepted everyone. I was immediately thrown off the deep end and got straight to work, learning how to use industry-standard protocols like CAN messaging and Github. I was learning the most in my clubs, and it has been the best preparation I could ask for for my academic pursuits.
+        </div>
+        <div class="image-container">
+            <img class="half-img" src="img/Makers/IMG_2926.jpg" alt="Met a famous youtuber in my club">
+        </div>
+    </div>
+    <div class="image-container" id="full-image-container">
+        <img id="full-img" src="img/Makers/IMG_0758.JPG" alt="Engineering Ball with the freshman in Makers">
+    </div>
+    <div class="half-container" id="bottom-half-container">
+        <div class="text-container">
+            The one club my sister heavily mentioned was Makers. She told me that the club itself builds interesting things for fun, and the community is supportive. Once I was in, I met a lot of cool people who I knew of but did not have the chance to talk to before. I immediately became closer friends with them and met new people in different grades. I met some awesome people, and without clubs, I would have missed out on awesome opportunities. Random Friday excursions to the rock climbing gym, treks to the science museum to see shuttle docking, and trips to frolic in the snow for the weekend are only the beginning of random things I got to have because of this club. For actual work, I am currently working on an automated monopoly board that moves pieces and plays against you using a reinforcement learning model. I will never have a machine learning class at USC, so it is helpful that I can learn these things outside of class.
+        </div>
+        <img class="half-img" id="bottom-half-img" src="img/Makers/IMG_4429.JPG" alt="Rock climbing with the coolest people">
+    </div>
+    <div id="footer">
+        Austin Tsai's Freshman Reflection of College 
+    </div>
+    <script>
+        $('#first a').hover(function(){
+            $('#first a').css('font-weight', 'bold');
+        });
+        $('#second a').hover(function(){
+            $('#second a').css('font-weight', 'bold');
+        });
+        $('#third a').hover(function(){
+            $('#third a').css('font-weight', 'bold');
+        });
+        $('#fourth a').hover(function(){
+            $('#fourth a').css('font-weight', 'bold');
+        });
+        $('#fifth a').hover(function(){
+            $('#fifth a').css('font-weight', 'bold');
+        });
+        $('#sixth a').hover(function(){
+            $('#sixth a').css('font-weight', 'bold');
+        });
+        $('#seventh a').hover(function(){
+            $('#seventh a').css('font-weight', 'bold');
+        });
+        $('h1, .image-container, .text').hover(function(){
+            $('.section a').css('font-weight', 'normal');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a page about the friends that I have made that are not related to any clubs or extracurricular. They are cool and epic.">
+    <title>Austin's College Friends</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <style>
+        h1{
+            text-align: center;
+            background-color: darkred;
+            height: fit-content;
+            padding: 0;
+            top: 100px;
+            margin-bottom: 0px;
+            font-size: 6em;
+            color: white;
+        }
+        .half-container{
+            display: flex;
+            width: 100%;
+            background-color: white;
+        }
+        #top-half-container{
+            padding-top: 0;
+            padding-bottom: 50px;
+        }
+        #bottom-half-container{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .text-container{
+            width: 35%;
+            margin-left: 15%;
+            line-height: 2em;
+            font-size: 1.2em;
+            text-align: justify;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 5% 5%;
+        }
+        .image-container{
+            padding-top: 50px;
+            width: 50%;
+        }
+        .half-img{
+            height: 650px;
+            margin-right: 35%;
+        }
+        #bottom-half-img{
+            margin-right: 20%;
+        }
+        #full-image-container{
+            margin: 50px auto;
+        }
+        #full-img{
+            width: 800px;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Friends</h1>
+    <div class="nav-bar">
+        <div class="section" id="first"><a href="homepage.html">Home</a></div>
+        <div class="section" id="second"><a href="friends.html">Friends</a></div>
+        <div class="section" id="third"><a href="first-memories.html">Memories</a></div>
+        <div class="section" id="fourth"><a href="clubs.html">Clubs</a></div>
+        <div class="section" id="fifth"><a href="volleyball.html">Volleyball</a></div>
+        <div class="section" id="sixth"><a href="future.html">Future</a></div>
+        <div class="section" id="seventh"><a href="blurb.html">Extra</a></div>
+    </div>
+
+    <div class="half-container" id="top-half-container">
+        <div class="text-container">
+            Before I began college, I was stressed. I was leaving my friends whom I had known since kindergarten. For the first time in my life, I would travel to a foreign land independently, and I was in charge of who I was around. After my first year of college, I confidently declare I have met quite the group of people. The people I am friends with now are not like those I surrounded myself with back home, but that is not bad. Initially, I felt like I was trying to search for what I lost, and the process was tumultuous. I spent nights, weeks, and months comparing the people I met to people back home and it always felt wrong. I tried molding new people into old identities, and I felt fake. Only after I gave up on this search did I truly accept people for who they were. It shook things up in my life, but that’s what college is all about — Change.
+        </div>
+        <div class="image-container">
+            <img class="half-img" src="img/meeting_people/walking.JPG" alt="Walking along Santa Monica Pier">
+        </div>
+    </div>
+    <div class="image-container" id="full-image-container">
+        <img id="full-img" src="img/meeting_people/beach.jpg" alt="Westcoast sunset">
+    </div>
+    <div class="half-container" id="bottom-half-container">
+        <div class="text-container">
+            The people I am around now are not the same as I began with, but that is okay with me. I feel like I have settled into a place where I can be myself without thinking twice about my actions and it feels quite liberating. I still have not regained what I have lost, but I think the change is what makes the college experience worth it. I am not the same person I was, and it is not a bad thing.
+        </div>
+        <img class="half-img" id="bottom-half-img" src="img/meeting_people/dinner.jpg" alt="dinner">
+    </div>
+    <div id="footer">
+        Austin Tsai's Freshman Reflection of College 
+    </div>
+    <script>
+        $('#first a').hover(function(){
+            $('#first a').css('font-weight', 'bold');
+        });
+        $('#second a').hover(function(){
+            $('#second a').css('font-weight', 'bold');
+        });
+        $('#third a').hover(function(){
+            $('#third a').css('font-weight', 'bold');
+        });
+        $('#fourth a').hover(function(){
+            $('#fourth a').css('font-weight', 'bold');
+        });
+        $('#fifth a').hover(function(){
+            $('#fifth a').css('font-weight', 'bold');
+        });
+        $('#sixth a').hover(function(){
+            $('#sixth a').css('font-weight', 'bold');
+        });
+        $('#seventh a').hover(function(){
+            $('#seventh a').css('font-weight', 'bold');
+        });
+        $('h1, .image-container, .text').hover(function(){
+            $('.section a').css('font-weight', 'normal');
+        });
+    </script>
+</body>
+</html>

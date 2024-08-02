@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a page about my hopes for the future. I may not know what is goig on, but I can hope for the best.">
+    <title>Austin's Future</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        h1{
+            text-align: center;
+            background-color: darkred;
+            height: fit-content;
+            padding: 0;
+            top: 100px;
+            margin-bottom: 0px;
+            font-size: 6em;
+            color: white;
+        }
+        .half-container{
+            display: flex;
+            width: 100%;
+            background-color: white;
+        }
+        #top-half-container{
+            padding-top: 0;
+            padding-bottom: 50px;
+        }
+        #bottom-half-container{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .text-container{
+            width: 50%;
+            margin: 0 auto;
+            line-height: 2em;
+            font-size: 1.2em;
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 5% 5%;
+        }
+        .image-container{
+            padding-top: 50px;
+            width: 50%;
+        }
+        .half-img{
+            height: 650px;
+            margin-right: 35%;
+        }
+        #bottom-half-img{
+            margin: 0 5%;
+        }
+        #bottom-left-half-img{
+            padding: none;
+            margin: 0 0 0 22%;    
+        }
+        #full-image-container{
+            margin: 50px auto;
+        }
+        #full-img{
+            width: 800px;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Future</h1>
+    <div class="nav-bar">
+        <div class="section" id="first"><a href="homepage.html">Home</a></div>
+        <div class="section" id="second"><a href="friends.html">Friends</a></div>
+        <div class="section" id="third"><a href="first-memories.html">Memories</a></div>
+        <div class="section" id="fourth"><a href="clubs.html">Clubs</a></div>
+        <div class="section" id="fifth"><a href="volleyball.html">Volleyball</a></div>
+        <div class="section" id="sixth"><a href="future.html">Future</a></div>
+        <div class="section" id="seventh"><a href="blurb.html">Extra</a></div>
+    </div>
+    <div class="text-container">
+        My first year at USC is coming to an end soon, and it has gone by too fast. I still remember moving into my room full of hope and ambition. My hopes and dreams for this year did not come to fruition, but I would not change that, which is why I am hesitant to hope for anything too specific. Whatever happens happens, and I just go with the flow. I do hope that I savor the time that I have in college before I am shipped off into the real world without a community to belong to. There are more memories that I hope to make and I just want to enjoy the moment while it lasts.
+    </div>
+    <div class="half-container" id="bottom-half-container">
+        <img class="half-img" id="bottom-left-half-img" src="img/future/IMG_2511.jpg" alt="Meetup at IKEA for lunch">
+        <img class="half-img" id="bottom-half-img" src="img/future/IMG_7313.jpg" alt="Kenny mogging in the middle of the road">
+    </div>
+    <div id="footer">
+        Austin Tsai's Freshman Reflection of College 
+    </div>
+    <script>
+        $('#first a').hover(function(){
+            $('#first a').css('font-weight', 'bold');
+        });
+        $('#second a').hover(function(){
+            $('#second a').css('font-weight', 'bold');
+        });
+        $('#third a').hover(function(){
+            $('#third a').css('font-weight', 'bold');
+        });
+        $('#fourth a').hover(function(){
+            $('#fourth a').css('font-weight', 'bold');
+        });
+        $('#fifth a').hover(function(){
+            $('#fifth a').css('font-weight', 'bold');
+        });
+        $('#sixth a').hover(function(){
+            $('#sixth a').css('font-weight', 'bold');
+        });
+        $('#seventh a').hover(function(){
+            $('#seventh a').css('font-weight', 'bold');
+        });
+        $('h1, .image-container, .text').hover(function(){
+            $('.section a').css('font-weight', 'normal');
+        });
+    </script>
+</body>
+</html>

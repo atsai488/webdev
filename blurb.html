@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a page dedicated for my friends. While I thought they would write these pargraphs themselves, they wanted me to write it.">
+    <title>Austin's Future</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        h1 {
+            font-family: serif;
+            text-align: center;
+            background-color: darkred;
+            height: fit-content;
+            margin-top: 65px;
+            font-size: 6em;
+            color: white;
+            font-weight: bold;
+        }
+        .nav-bar{
+            position: fixed;
+            top: 0px;
+            height: 65px;
+            width: 100%;
+            display: flex;
+            z-index: 999;
+        }
+        .section{
+            padding-top: 0%;
+            width: 20%;
+            text-align: center;
+            font-size: 2em;
+            background-color: darkred;
+            font-family: serif;
+        }
+        .section a{
+            text-decoration: none;
+            color: white;
+        }
+        img {
+            width: auto;
+            height: 500px;
+            display: block;
+            margin: 0 auto; 
+        }
+        
+        body {
+            background-color: white;
+            padding: 0;
+            margin: 0;
+        }
+        #footer{
+            width: 100%;
+            background-color: black;
+            text-align: center;
+            color: white;
+            height: 100px;
+            font-size: 1.5em;
+            padding-top: 30px;
+        }
+        #carousel-container{
+            height: 500px;
+        }
+        .caption{
+            width: 40%;
+            margin-right: 30%;
+            margin-left: 30%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Extra Messages from friends</h1>
+    <div class="nav-bar">
+        <div class="section" id="first"><a href="homepage.html">Home</a></div>
+        <div class="section" id="second"><a href="friends.html">Friends</a></div>
+        <div class="section" id="third"><a href="first-memories.html">Memories</a></div>
+        <div class="section" id="fourth"><a href="clubs.html">Clubs</a></div>
+        <div class="section" id="fifth"><a href="volleyball.html">Volleyball</a></div>
+        <div class="section" id="sixth"><a href="future.html">Future</a></div>
+        <div class="section" id="seventh"><a href="blurb.html">Extra</a></div>
+    </div>
+    <div id="carousel-container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="1000" data-pause=false>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block " src="img/blurb/jay.jpg" alt="First slide">
+                <div class="caption">This is Jay Campanell. He is the goofiest person I know who is always either happy or non-verbal. He is addicted to league of legends, listening to albums, and is an incognito CS major. While he claims to hate CS, he is in exclusively engineering clubs/AI clubs which is a bit sus.</div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block " src="img/blurb/christina.jpg" alt="Second slide">
+                <div class="caption">This is Christina You. Her main catch phrase is "GUYS" with her hands on her head, and it is usually because she in not dialed in for CS104. It is not because she can not do the homework, it is because she procrastinates and is sipping her coffee instead. She is chronically on celsius and without our intervention, would probably have overdosed on caffeine by now.</div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="img/blurb/maya.jpg" alt="Third slide">
+                <div class="caption">This is Maya Reetz. She is our Taiwanese brother who is also short. Coming from the prime location of New York, she grew up in the first American suburban neighborhood. She is a hater and will not text you first.</div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="img/blurb/megan.jpg" alt="Fourth slide">
+                <div class="caption">This is Megan Lee. She is one with the trees and ocean. Hailing from the land of dolphins, the ironic thing is that she can not surf. She also can not cook rice despite being Asian. Do not worry, she will be learning how to during the summer.</div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="img/blurb/sophia.jpg" alt="Fifth slide">
+                <div class="caption">This is Sophia Khubchandani. She is a real day one-er. If you are not in a crisis, she will be in one. However, if you are in a crisis, she will lock in and be there. It is quite the whiplash experience with her. She actually is really cracked and is always busy.
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="img/blurb/tony.jpg" alt="Sixth slide">
+                <div class="caption">This is Tony Lin. He is my Taiwanese brother and flutist. He is currently doing his best to graduate within five years and is always going through it. He is kind of the goat though when it comes to being a legend.</div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script>
+        $('.carousel').carousel({
+            interval: 100
+        });
+    </script>
+    <script>
+        $('#first a').hover(function(){
+            $('#first a').css('font-weight', 'bold');
+        });
+        $('#second a').hover(function(){
+            $('#second a').css('font-weight', 'bold');
+        });
+        $('#third a').hover(function(){
+            $('#third a').css('font-weight', 'bold');
+        });
+        $('#fourth a').hover(function(){
+            $('#fourth a').css('font-weight', 'bold');
+        });
+        $('#fifth a').hover(function(){
+            $('#fifth a').css('font-weight', 'bold');
+        });
+        $('#sixth a').hover(function(){
+            $('#sixth a').css('font-weight', 'bold');
+        });
+        $('#seventh a').hover(function(){
+            $('#seventh a').css('font-weight', 'bold');
+        });
+        $('h1, .image-container, .text').hover(function(){
+            $('.section a').css('font-weight', 'normal');
+        });
+    </script>
+</body>
+</html>

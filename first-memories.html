@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a page full of random moments that happened throughout first semester. I am more fond of some memories than others, but they all deserve their spot here.">
+    <title>Austin's First Semester Memories</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <style>
+        h1{
+            text-align: center;
+            background-color: darkred;
+            height: fit-content;
+            padding: 0;
+            top: 100px;
+            margin-bottom: 0px;
+            font-size: 6em;
+            color: white;
+        }
+        .half-container{
+            display: flex;
+            width: 100%;
+            background-color: white;
+        }
+        #top-half-container{
+            padding-top: 0;
+            padding-bottom: 50px;
+        }
+        #bottom-half-container{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .text-container{
+            width: 35%;
+            margin-left: 15%;
+            line-height: 2em;
+            font-size: 1.2em;
+            text-align: justify;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 5% 5%;
+        }
+        .image-container{
+            padding-top: 50px;
+            width: 50%;
+        }
+        .half-img{
+            height: 650px;
+            margin-right: 35%;
+        }
+        #bottom-half-img{
+            margin-right: 20%;
+        }
+        #full-image-container{
+            margin: 50px auto;
+        }
+        #full-img{
+            width: 800px;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Memories</h1>
+    <div class="nav-bar">
+        <div class="section" id="first"><a href="homepage.html">Home</a></div>
+        <div class="section" id="second"><a href="friends.html">Friends</a></div>
+        <div class="section" id="third"><a href="first-memories.html">Memories</a></div>
+        <div class="section" id="fourth"><a href="clubs.html">Clubs</a></div>
+        <div class="section" id="fifth"><a href="volleyball.html">Volleyball</a></div>
+        <div class="section" id="sixth"><a href="future.html">Future</a></div>
+        <div class="section" id="seventh"><a href="blurb.html">Extra</a></div>
+    </div>
+
+    <div class="half-container" id="top-half-container">
+        <div class="text-container">
+            Starting college was a weird time in my life. I knew it would shift who I was dramatically, so I wanted to document as much of the start as possible. I wanted to mark every moment where I met someone new, so I could look back in 10 years and laugh about how I first connected with a lifelong friend. A random trend I noticed was that no matter what I would always find myself on the ground because I was being overdramatic. Whether it was because I just had enough from my classes or because I was dealing with silly little things in my life. I would just collapse on the floor and my friends would laugh at me. It became a staple of my identity, and my friend even designated a part of the floor of her room to me. 
+        </div>
+        <div class="image-container">
+            <img class="half-img" src="img/first_semester_memories/IMG_9916.jpg" alt="Laying on the floor after a long day at work">
+        </div>
+    </div>
+    <div class="image-container" id="full-image-container">
+        <img id="full-img" src="img/first_semester_memories/IMG_2209.jpg" alt="Sleeping on the couch since my roommate got Covid">
+    </div>
+    <div class="half-container" id="bottom-half-container">
+        <div class="text-container">
+            For one reason or another, my first semester was tumultuous. I cringe at a lot of the memories I can recall and would never put myself in a situation like that now. However, that does not mean I regret any of the memories I have made. I think my first semester was a time where I grew the most in my life as a person, and I am thankful for the people who helped me through that process. In the end, everything worked out and I ended my first semester on a high note as I ice skated next to the Crypto arena. 
+        </div>
+        <img class="half-img" id="bottom-half-img" src="img/first_semester_memories/IMG_9370.jpg" alt="Banana fit that my friends got me">
+    </div>
+    <div id="footer">
+        Austin Tsai's Freshman Reflection of College 
+    </div>
+    <script>
+        $('#first a').hover(function(){
+            $('#first a').css('font-weight', 'bold');
+        });
+        $('#second a').hover(function(){
+            $('#second a').css('font-weight', 'bold');
+        });
+        $('#third a').hover(function(){
+            $('#third a').css('font-weight', 'bold');
+        });
+        $('#fourth a').hover(function(){
+            $('#fourth a').css('font-weight', 'bold');
+        });
+        $('#fifth a').hover(function(){
+            $('#fifth a').css('font-weight', 'bold');
+        });
+        $('#sixth a').hover(function(){
+            $('#sixth a').css('font-weight', 'bold');
+        });
+        $('#seventh a').hover(function(){
+            $('#seventh a').css('font-weight', 'bold');
+        });
+        $('h1, .image-container, .text').hover(function(){
+            $('.section a').css('font-weight', 'normal');
+        });
+    </script>
+</body>
+</html>

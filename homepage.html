@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Austin Tsai's journey through college. While it has only been one year so far at USC, he has many things he would like to share and reflect on. Hope you enjoy it!">
+    <title>Austin's College Life</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        
+.animation {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+.container a{
+    text-decoration: none;
+    background-color: maroon;
+    color: #FFF;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5;
+    visibility: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 3em;
+}
+
+.container:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+.container:hover a {
+    visibility: visible;
+    opacity: 1;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+p{
+    font-size: 1.5em;
+}
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="section" id="first"><a href="homepage.html">Home</a></div>
+        <div class="section" id="second"><a href="friends.html">Friends</a></div>
+        <div class="section" id="third"><a href="first-memories.html">Memories</a></div>
+        <div class="section" id="fourth"><a href="clubs.html">Clubs</a></div>
+        <div class="section" id="fifth"><a href="volleyball.html">Volleyball</a></div>
+        <div class="section" id="sixth"><a href="future.html">Future</a></div>
+        <div class="section" id="seventh"><a href="blurb.html">Extra</a></div>
+    </div>
+    <h1>Austin's College Life</h1>
+    <div class="text">
+        <p>Hello! My name is Austin Tsai, and I am almost done with my first year at USC. With the school year coming to an end, I would like to take some time to make a memory board of sorts to reflect on my time here. Each one of the photos below represents something important to my college career, and will direct you to another page with more information. Have fun!</p>
+    </div>
+    
+
+
+    <div class="image-container">
+        <div class="fly">
+            <div class="animation">
+                <div class="container">
+                    <img src="img/meeting_people/griffith.JPG" alt="Sitting on top of Griffith Park">
+                    <div class="overlay">Meeting New Friends</div>
+                    <a href="friends.html">Read More</a>
+                </div><!--container-->
+            </div><!--animation-->
+        </div>
+        <div class="fly">
+            <div class="animation">
+                <div class="container">
+                    <img src="img/first_semester_memories/IMG_2882.jpg" alt="LA night lights on griffith park">
+                    <div class="overlay">First Semester Memories</div>
+                    <a href="first-memories.html">Read More</a>
+                </div><!--container-->
+            </div><!--animation-->    
+        </div>
+        <div class="fly">
+            <div class="animation">
+                <div class="container">
+                    <img src="img/Makers/IMG_2522.jpg" alt="Frolic in the snow with makers">
+                    <div class="overlay">Clubs and Extracurriculars</div>
+                    <a href="clubs.html">Read More</a>
+                </div><!--container-->
+            </div><!--animation-->    
+        </div>
+        <div class="fly">
+            <div class="animation">
+                <div class="container">
+                    <img src="img/volleyball/IMG_8530.jpg" alt="Volleyball!">
+                    <div class="overlay">Volleyball Moments</div>
+                    <a href="volleyball.html">Read More</a>
+                </div><!--container-->
+            </div><!--animation-->    
+        </div>
+        <div class="fly">
+            <div class="animation">
+                <div class="container">
+                    <img src="img/future/headshot.jpeg" alt="Austin in a suit.">    
+                    <div class="overlay">Dreams for Future</div>
+                    <a href="future.html">Read More</a>
+                </div><!--container-->
+            </div><!--animation-->    
+        </div>
+        <div class="fly">
+            <div class="animation">
+                <div class="container">
+                    <img src="img/blurb/IMG_4646.jpg" alt="Pickleball at home">
+                    <div class="overlay">Extra messages from friends</div>
+                    <a href="blurb.html">Read More</a>
+                </div><!--container-->
+            </div><!--animation-->
+        </div>
+    </div>
+    <div id="footer">
+        Austin Tsai's Freshman Reflection of College 
+    </div>
+    <script src="flyin.js"></script>
+    <script>
+        $('#first a').hover(function(){
+            $('#first a').css('font-weight', 'bold');
+        });
+        $('#second a').hover(function(){
+            $('#second a').css('font-weight', 'bold');
+        });
+        $('#third a').hover(function(){
+            $('#third a').css('font-weight', 'bold');
+        });
+        $('#fourth a').hover(function(){
+            $('#fourth a').css('font-weight', 'bold');
+        });
+        $('#fifth a').hover(function(){
+            $('#fifth a').css('font-weight', 'bold');
+        });
+        $('#sixth a').hover(function(){
+            $('#sixth a').css('font-weight', 'bold');
+        });
+        $('#seventh a').hover(function(){
+            $('#seventh a').css('font-weight', 'bold');
+        });
+        $('h1, .image-container, .text').hover(function(){
+            $('.section a').css('font-weight', 'normal');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My time at USC could not be talked about without mentioning volleyball. It is my stress relief and I made so many great friends here.">
+    <title>Volleyball</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        h1{
+            text-align: center;
+            background-color: darkred;
+            height: fit-content;
+            padding: 0;
+            top: 100px;
+            margin-bottom: 0px;
+            font-size: 6em;
+            color: white;
+        }
+        .half-container{
+            display: flex;
+            width: 100%;
+            background-color: white;
+        }
+        #top-half-container{
+            padding-top: 0;
+            padding-bottom: 50px;
+        }
+        #bottom-half-container{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .text-container{
+            width: 35%;
+            margin-left: 15%;
+            line-height: 2em;
+            font-size: 1.2em;
+            text-align: justify;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 5% 5%;
+        }
+        .image-container{
+            padding-top: 50px;
+            width: 50%;
+        }
+        .half-img{
+            height: 650px;
+            margin-right: 35%;
+        }
+        #bottom-half-img{
+            margin-right: 20%;
+        }
+        #full-image-container{
+            margin: 50px auto;
+        }
+        #full-img{
+            width: 800px;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Volleyball</h1>
+    <div class="nav-bar">
+        <div class="section" id="first"><a href="homepage.html">Home</a></div>
+        <div class="section" id="second"><a href="friends.html">Friends</a></div>
+        <div class="section" id="third"><a href="first-memories.html">Memories</a></div>
+        <div class="section" id="fourth"><a href="clubs.html">Clubs</a></div>
+        <div class="section" id="fifth"><a href="volleyball.html">Volleyball</a></div>
+        <div class="section" id="sixth"><a href="future.html">Future</a></div>
+        <div class="section" id="seventh"><a href="blurb.html">Extra</a></div>
+    </div>
+
+    <div class="half-container" id="top-half-container">
+        <div class="text-container">
+            One thing that has been hard to keep up since coming to college has been exercising. During high school, I would either go to the gym or run every day. It helped keep my mental health healthy and kept me in shape. Now that I was no longer on the cross-country team, I had to find a different outlet to stay healthy. Now introducing volleyball open gym. Every Tuesday, Thursday, Friday, and Saturday, I would play volleyball for two hours at the Lyon center. It is a welcoming environment for all with no experience requirement. I met some of the funniest people here at volleyball, especially those who are not within my small bubble of engineering, and it is my little escape from work. I also have gotten better at volleyball as I can now do a jump, top-spin serve, something that I never thought I would be able to do.
+        </div>
+        <div class="image-container">
+            <img class="half-img" src="img/volleyball/IMG_4087.jpg" alt="Korean Beef Barbeque with volleyball friends">
+        </div>
+    </div>
+    <div class="image-container" id="full-image-container">
+        <img id="full-img" src="img/volleyball/IMG_9979.JPG" alt="My friends using a jank method to get the ball down from the basketball hoop">
+    </div>
+    <div class="half-container" id="bottom-half-container">
+        <div class="text-container">
+            Because open-gym volleyball is really a mash of people from all over campus, I was invited to the swimvite last semester by my friend who happens to be the captain of the club swim team. I do not remember much of what happened that night, but it was super hilarious to see a side of them that I do not usually see. One second we were all spectating a friend of ours talk to someone and the next moment we were eating tacos in someone’s kitchen. It was a whirlwind of a night and it has made my college life a college life
+        </div>
+        <img class="half-img" id="bottom-half-img" src="img/volleyball/IMG_3504.jpg" alt="Wild moment from swimvite with volleyball friends">
+    </div>
+    <div id="footer">
+        Austin Tsai's Freshman Reflection of College 
+    </div>
+    <script>
+        $('#first a').hover(function(){
+            $('#first a').css('font-weight', 'bold');
+        });
+        $('#second a').hover(function(){
+            $('#second a').css('font-weight', 'bold');
+        });
+        $('#third a').hover(function(){
+            $('#third a').css('font-weight', 'bold');
+        });
+        $('#fourth a').hover(function(){
+            $('#fourth a').css('font-weight', 'bold');
+        });
+        $('#fifth a').hover(function(){
+            $('#fifth a').css('font-weight', 'bold');
+        });
+        $('#sixth a').hover(function(){
+            $('#sixth a').css('font-weight', 'bold');
+        });
+        $('#seventh a').hover(function(){
+            $('#seventh a').css('font-weight', 'bold');
+        });
+        $('h1, .image-container, .text').hover(function(){
+            $('.section a').css('font-weight', 'normal');
+        });
+    </script>
+</body>
+</html>
